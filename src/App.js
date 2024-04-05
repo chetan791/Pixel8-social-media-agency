@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Navbar } from "./components/Navbar";
+import { Home } from "./pages/Home";
+import ImageSlider from "./components/Slider";
+import { Middle } from "./pages/Middle";
 
 function App() {
+  let arr = [
+    "https://wallpapers-clan.com/wp-content/uploads/2023/11/marvel-iron-man-in-destroyed-suit-desktop-wallpaper-preview.jpg",
+    "https://wallpapers.com/images/featured/iron-man-ouqxo5w2b59h0042.jpg",
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Home />
+      <ImageSlider images={arr} interval={4000} />
+      <Middle />
     </div>
   );
 }

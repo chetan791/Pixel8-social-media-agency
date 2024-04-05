@@ -1,0 +1,21 @@
+#middle h4 {
+  display: block;
+  margin: auto;
+  /* width: 50%; */
+}
+
+#middle span {
+  font-size: 37px;
+  font-weight: bolder;
+}
+
+#middle {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  padding-top: 50px;
+}
+.color {
+  height: 100px;
+  width: 100%;
+}
